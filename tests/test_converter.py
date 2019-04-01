@@ -43,3 +43,11 @@ class TestConverter(TestCase):
         heisei_time = datetime.datetime(2015, 8, 5)
         eq_(strjpftime(heisei_time), "H27.08.05")
         eq_(strjpftime(heisei_time, "%O%E年"), "平成27年")
+
+        first_reiwa_time = datetime.datetime(2019, 5, 1)
+        eq_(strjpftime(first_reiwa_time), "R1.05.01")
+        eq_(strjpftime(first_reiwa_time, "%O%E年"), "令和元年")
+
+        reiwa_time = datetime.datetime(2025, 8, 5)
+        eq_(strjpftime(reiwa_time), "R7.08.05")
+        eq_(strjpftime(reiwa_time, "%O%E年"), "令和7年")

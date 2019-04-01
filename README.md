@@ -30,8 +30,8 @@ pip install erajp
 
 ### New available date format
 
- - %o : alpabet era
- - %O : Chinese charactor era
+ - %o : alphabet era
+ - %O : Chinese character era
  - %E : era year
 
 ## Main Project Website.
